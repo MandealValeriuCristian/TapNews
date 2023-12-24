@@ -28,7 +28,6 @@ public class ArticleRepository: Repository<Article>, IArticlesRepository
     {
         return await _context.Articles
             .Include(cat => cat.Category)
-            //.ProjectTo<ArticleDto>(_mapper.ConfigurationProvider)
             .ToListAsync();
     }
 }

@@ -6,13 +6,16 @@ namespace API.Data;
 public class UnitOfWork : IUnitOfWork
 {
     private readonly DataContext _context;
-    public UnitOfWork(DataContext context, IArticlesRepository articles)
+    public UnitOfWork(DataContext context, IArticlesRepository articles, ICategoriesRepository categories)
     {
         _context = context;
         Articles = articles;
+        Categories = categories;
     }
 
     public IArticlesRepository Articles { get; set; }
+
+    public ICategoriesRepository Categories { get; set; }
 
     public async Task<Result> CompleteAsync()
     {

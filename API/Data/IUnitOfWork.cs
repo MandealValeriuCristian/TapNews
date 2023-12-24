@@ -7,6 +7,8 @@ public interface IUnitOfWork : IDisposable
 {
     IArticlesRepository Articles { get; }
 
+    ICategoriesRepository Categories { get; }
+
     Task<Result> CompleteAsync();
 }
 

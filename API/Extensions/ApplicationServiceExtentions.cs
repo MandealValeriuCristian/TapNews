@@ -19,8 +19,10 @@ public static class ApplicationServiceExtentions
         services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         services.AddScoped<IArticlesRepository, ArticleRepository>();
+        services.AddScoped<ICategoriesRepository, CategoryRepository>();
 
         services.AddScoped<IArticlesService, ArticlesService>();
+        services.AddScoped<ICategoriesService, CategoriesService>();
         services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         return services;
     }

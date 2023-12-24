@@ -11,6 +11,9 @@ public class AutoMapperProfiles : Profile
         CreateMap<Article, ArticleDto>()
             .ForMember(dest => dest.Category,
             opt => opt.MapFrom(src => src.Category.Name));
+        CreateMap<ArticleDto, Article>()
+            .ForPath(dest => dest.Category.Name,
+            opt => opt.MapFrom(src => src.Category));
     }
 
 }
