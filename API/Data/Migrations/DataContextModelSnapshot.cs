@@ -74,7 +74,7 @@ namespace API.Data.Migrations
             modelBuilder.Entity("API.Entities.Article", b =>
                 {
                     b.HasOne("API.Entities.Category", "Category")
-                        .WithMany("Article")
+                        .WithMany("Articles")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -84,7 +84,7 @@ namespace API.Data.Migrations
 
             modelBuilder.Entity("API.Entities.Category", b =>
                 {
-                    b.Navigation("Article");
+                    b.Navigation("Articles");
                 });
 #pragma warning restore 612, 618
         }

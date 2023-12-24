@@ -1,0 +1,178 @@
+[
+  {
+    "Name": "Business and Economy",
+    "CreatedAt": "2019-11-03",
+    "Articles": [
+      {
+        "Title": "Game On: Highlights from Recent Sports Events",
+        "CreatedAt": "2020-02-24",
+        "Description": "Explore medical marvels and innovations in healthcare that are improving lives."
+      },
+      {
+        "Title": "Surviving Economic Shifts: Strategies for Businesses",
+        "CreatedAt": "2020-02-25",
+        "Description": "Navigate economic shifts with strategies designed to help businesses thrive in changing times."
+      },
+      {
+        "Title": "Financial Forecast: What the Numbers Tell Us",
+        "CreatedAt": "2020-02-21",
+        "Description": " Gain insights into financial forecasts and understand what the numbers are telling us about the market."
+      },
+      {
+        "Title": "Entrepreneurial Journeys: Tales of Success and Innovation",
+        "CreatedAt": "2020-02-16",
+        "Description": "Embark on entrepreneurial journeys with tales of success and innovation in the business world."
+      }
+
+    ]
+  },
+  {
+    "Name": "Technology",
+    "CreatedAt": "2019-04-15",
+    "Articles": [
+      {
+        "Title": "The Rise of Political Movements: A Global Perspective",
+        "CreatedAt": "2019-02-28",
+        "Description": "Weather events unveiled—dive deep into in-depth coverage of weather events and their impact."
+      },
+      {
+        "Title": "Climate Crusaders: Heroes in the Fight Against Change",
+        "CreatedAt": "2019-04-15",
+        "Description": "Weather wonders—explore the forces of nature and delve into stories of meteorological phenomena."
+      },
+      {
+        "Title": "The Future Tech Landscape: What to Expect",
+        "CreatedAt": "2019-04-15",
+        "Description": "Discover the future tech landscape and what groundbreaking innovations to expect."
+      },
+      {
+        "Title": "Smart Living: Gadgets Transforming Our Homes",
+        "CreatedAt": "2019-04-15",
+        "Description": "Explore the world of smart living with gadgets that are transforming our homes and daily lives."
+      },
+      {
+        "Title": "Startups to Watch: Tech Innovations Taking the Lead",
+        "CreatedAt": "2019-04-15",
+        "Description": "Keep an eye on startups that are poised to lead in tech innovations and redefine industries."
+      },
+      {
+        "Title": "Car Chronicles: Reviews and Insights from the Auto World",
+        "CreatedAt": "2019-04-30",
+        "Description": "Community compassion—explore events that touched hearts and made a positive impact on communities."
+      }
+    ]
+  },
+  {
+    "Name": "Human Interest",
+    "CreatedAt": "2019-07-11",
+    "Articles": [
+      {
+        "Title": "Profiles in Resilience: Overcoming Life's Challenges",
+        "CreatedAt": "2020-02-18",
+        "Description": "Electric dreams—take a glimpse into the future of electric vehicles and their impact on the automotive landscape."
+      }
+    ]
+  },
+  {
+    "Name": "Lifestyle",
+    "CreatedAt": "2019-07-24",
+    "Articles": [
+      {
+        "Title": "Hollywood Buzz: Celebrity Gossip and News",
+        "CreatedAt": "2019-06-15",
+        "Description": "Voices for change—stay informed about social justice movements and initiatives making a positive impact."
+      },
+      {
+        "Title": "Weather Wonders: Exploring Nature's Forces",
+        "CreatedAt": "2020-03-12",
+        "Description": "Climate crusaders—meet the heroes in the fight against climate change and environmental degradation."
+      }
+    ]
+  },
+  {
+    "Name": "Entertainment",
+    "CreatedAt": "2019-10-27",
+    "Articles": [
+      {
+        "Title": "Hollywood Buzz: Celebrity Gossip and News",
+        "CreatedAt": "2019-08-15",
+        "Description": "Conservation chronicles—explore stories of efforts dedicated to protecting our ecosystems."
+      }
+    ]
+  },
+  {
+    "Name": "Sports",
+    "CreatedAt": "2020-06-09",
+    "Articles": [
+      {
+        "Title": "Profiles in Resilience: Overcoming Life's Challenges",
+        "CreatedAt": "2019-06-05",
+        "Description": "Behind the bars—stay updated on legal developments, high-profile cases, and courtroom dramas."
+      }
+    ]
+  },
+  {
+    "Name": "Automotive",
+    "CreatedAt": "2019-09-17",
+    "Articles": [
+      {
+        "Title": "Weather Wonders: Exploring Nature's Forces",
+        "CreatedAt": "2020-06-01",
+        "Description": "Wanderlust Chronicles—embark on travel adventures with features on exotic destinations."
+      },
+      {
+        "Title": "Wanderlust Chronicles: Travel Adventures Await",
+        "CreatedAt": "2019-07-27",
+        "Description": "Car chronicles—get reviews and insights from the automotive world, from classic cars to the latest models."
+      }
+    ]
+  },
+  {
+    "Name": "Science",
+    "CreatedAt": "2019-06-26",
+    "Articles": [
+      {
+        "Title": "Weather Wonders: Exploring Nature's Forces",
+        "CreatedAt": "2020-06-01",
+        "Description": "Human rights horizons—advocacy and impact in the realm of human rights and societal issues."
+      },
+      {
+        "Title": "Beyond the Stars: Discoveries in Space Exploration",
+        "CreatedAt": "2020-06-14",
+        "Description": "Embark on a journey beyond the stars with discoveries in space exploration and cosmic phenomena."
+      },
+      {
+        "Title": "Unlocking Medical Mysteries: Recent Breakthroughs",
+        "CreatedAt": "2020-06-05",
+        "Description": "Unlock the mysteries of medical science with recent breakthroughs in healthcare and medicine."
+      },
+      {
+        "Title": "Environmental Frontiers: Advancements in Sustainability",
+        "CreatedAt": "2020-06-06",
+        "Description": "Delve into environmental frontiers and explore advancements in sustainability and conservation."
+      }
+    ]
+  },
+  {
+    "Name": "Education",
+    "CreatedAt": "2020-04-09",
+    "Articles": [
+      {
+        "Title": "The Future Tech Landscape: What to Expect",
+        "CreatedAt": "2019-05-10",
+        "Description": "Film frenzy awaits with must-watch movies of the season—reviews, recommendations, and more."
+      }
+    ]
+  },
+  {
+    "Name": "Weather",
+    "CreatedAt": "2020-05-07",
+    "Articles": [
+      {
+        "Title": "Wanderlust Chronicles: Travel Adventures Await",
+        "CreatedAt": "2020-05-17",
+        "Description": "Fashion forward—stay on trend with the latest fashion insights and style tips for a modern lifestyle."
+      }
+    ]
+  }
+]
