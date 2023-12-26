@@ -29,7 +29,7 @@ public class CategoryRepository: Repository<Category>, ICategoriesRepository
             .ToListAsync();
     }
 
-    public async Task<Category> GetCategoryByName(string name)
+    public async Task<Category> FindCategoryByName(string name)
     {
         return await _context.Categories
             .Include(art => art.Articles)

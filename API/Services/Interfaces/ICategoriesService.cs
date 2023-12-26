@@ -8,6 +8,6 @@ public interface ICategoriesService
     Task<Category> GetCategoryAsync(int id);
 
     Task<IEnumerable<Category>> GetAllCategoriesAsync();
-    Task<Category> GetCategoryByNameAsync(string name);
+    Task<Category> FindCategoryByNameAsync(string name);
 
 }

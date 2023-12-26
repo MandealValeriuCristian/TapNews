@@ -18,9 +18,9 @@ public class CategoriesService : ICategoriesService
         throw new NotImplementedException();
     }
 
-    public async Task<Category> GetCategoryByNameAsync(string categoryName)
+    public async Task<Category> FindCategoryByNameAsync(string categoryName)
     {
-        return await _unitOfWork.Categories.GetCategoryByName(categoryName);
+        return await _unitOfWork.Categories.FindCategoryByName(categoryName);
     }
 
     public async Task<Category> GetCategoryAsync(int id)

@@ -6,4 +6,5 @@ public class Category
     public string Name { get; set; }
     public DateTime CreatedAt { get; set; }
     public List<Article> Articles { get; set; }
+
 }

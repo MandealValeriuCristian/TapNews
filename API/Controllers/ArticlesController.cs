@@ -1,5 +1,6 @@
 ﻿using API.DTOs;
 using API.Entities;
+using API.Helpers;
 using API.Services.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -11,13 +12,11 @@ public class ArticlesController: BaseApiController
 {
     private readonly IArticlesService _articlesService;
     private readonly IMapper _mapper;
-    private readonly ICategoriesService _categoriesService;
 
-    public ArticlesController(IArticlesService articlesService, IMapper mapper, ICategoriesService categoriesService)
+    public ArticlesController(IArticlesService articlesService, IMapper mapper)
     {
         _articlesService = articlesService;
         _mapper = mapper;
-        _categoriesService = categoriesService;
     }
     [HttpGet]
     public async Task<IActionResult> GetAllArticles()
@@ -44,11 +43,8 @@ public class ArticlesController: BaseApiController
     [HttpPost]
     public async Task<IActionResult> Create(ArticleDto articleDto)
     {
-        //var category = _categoriesService.GetCategoryAsync(articleDto.Category.Id);
-        //if (articleDto.Category != null)
-        //var category = _categoriesService.GetCategoryByNameAsync(articleDto.Category);
         var article = _mapper.Map<Article>(articleDto);
-
+        
         var result = await _articlesService.CreateArticleAsync(article);
 
         if (result.IsFailure)
