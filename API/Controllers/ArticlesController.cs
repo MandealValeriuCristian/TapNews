@@ -35,7 +35,7 @@ public class ArticlesController: BaseApiController
         var article = await _articlesService.GetArticleAsync(id);
         if(article == null)
         {
-            return NotFound($"No product with ID {id} has been found");
+            return NotFound($"No article with ID {id} has not been found");
         }
         return Ok(_mapper.Map<ArticleDto>(article));
     }
@@ -63,7 +63,7 @@ public class ArticlesController: BaseApiController
 
         var result = await _articlesService.UpdateArticleAsync(articleFromRepo, articleDto);
         if (result.IsFailure)
-            return BadRequest($"Could not create article: {result.Error}");
+            return BadRequest($"Could not update article: {result.Error}");
         return NoContent();
     }
     [HttpDelete("{id}")]
