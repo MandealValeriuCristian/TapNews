@@ -58,5 +58,9 @@ namespace API.Services
                 ? Result.Fail(articleResult.Error)
                 : Result.Ok();
         }
+        public async Task<PagedList<Article>> GetAllArticlesWithParams(ArticleParams articleParams)
+        {
+            return await _unitOfWork.Articles.GetAllWithParams(articleParams);
+        }
     }
 }

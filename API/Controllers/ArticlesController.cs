@@ -1,5 +1,6 @@
 ﻿using API.DTOs;
 using API.Entities;
+using API.Extensions;
 using API.Helpers;
 using API.Services.Interfaces;
 using AutoMapper;
@@ -19,14 +20,15 @@ public class ArticlesController: BaseApiController
         _mapper = mapper;
     }
     [HttpGet]
-    public async Task<IActionResult> GetAllArticles()
+    public async Task<ActionResult<PagedList<Article>>> GetAllArticles([FromQuery]ArticleParams articleParams)
     {
-        var articles = await _articlesService.GetAllArticlesAsync();
+        var articles = await _articlesService.GetAllArticlesWithParams(articleParams);
 
         if(!articles.Any())
         {
             return NoContent();
         }
+        Response.AddPaginationHeader(articles.MetaData);
         return Ok(_mapper.Map<IEnumerable<ArticleDto>>(articles));
     }
     [HttpGet("{id}")]

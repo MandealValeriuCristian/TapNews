@@ -11,4 +11,5 @@ public interface IArticlesService
     Task<Result<Article>> CreateArticleAsync(Article article);
     Task<Result> UpdateArticleAsync(Article article, ArticleDto articleDto);
     Task<Result> DeleteArticleAsync(Article article);
+    Task<PagedList<Article>> GetAllArticlesWithParams(ArticleParams articleParams);
 }

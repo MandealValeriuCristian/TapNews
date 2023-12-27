@@ -1,6 +1,8 @@
 ﻿using API.Data.Repositories.Interfaces;
 using API.DTOs;
 using API.Entities;
+using API.Extensions;
+using API.Helpers;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
@@ -29,5 +31,18 @@ public class ArticleRepository: Repository<Article>, IArticlesRepository
         return await _context.Articles
             .Include(cat => cat.Category)
             .ToListAsync();
+    }
+
+    public async Task<PagedList<Article>> GetAllWithParams(ArticleParams articleParams)
+    {
+        var query = _context.Articles
+            .Include(cat => cat.Category)
+            .Sort(articleParams.OrderByDate)
+            .Search(articleParams.SearchTerm)
+            .AsQueryable();
+
+        var articles = await PagedList<Article>.ToPagedList(query,
+            articleParams.PageNumber, articleParams.PageSize);
+        return articles;
     }
 }
